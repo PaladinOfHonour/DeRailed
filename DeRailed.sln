@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeRailed.Plugins", "DeRailed.Plugins.csproj", "{93CA100E-C055-3E97-5963-2C1CC274696A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeRailed", "DeRailed.csproj", "{EE552E9A-2C9E-C2A3-60E9-04F2CFD4486A}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeRailed.Editor.Plugins", "DeRailed.Editor.Plugins.csproj", "{26D29478-B392-B635-7ACC-3EE3CB1595EA}"
 EndProject
 Global
@@ -15,6 +17,10 @@ Global
 		{93CA100E-C055-3E97-5963-2C1CC274696A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93CA100E-C055-3E97-5963-2C1CC274696A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93CA100E-C055-3E97-5963-2C1CC274696A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE552E9A-2C9E-C2A3-60E9-04F2CFD4486A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE552E9A-2C9E-C2A3-60E9-04F2CFD4486A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE552E9A-2C9E-C2A3-60E9-04F2CFD4486A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE552E9A-2C9E-C2A3-60E9-04F2CFD4486A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{26D29478-B392-B635-7ACC-3EE3CB1595EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{26D29478-B392-B635-7ACC-3EE3CB1595EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26D29478-B392-B635-7ACC-3EE3CB1595EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
