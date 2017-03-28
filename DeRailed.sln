@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeRailed.Plugins", "DeRailed.Plugins.csproj", "{93CA100E-C055-3E97-5963-2C1CC274696A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeRailed", "DeRailed.csproj", "{EE552E9A-2C9E-C2A3-60E9-04F2CFD4486A}"
