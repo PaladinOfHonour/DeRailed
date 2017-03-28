@@ -6,7 +6,7 @@ using System.Collections;
 public class TextController : MonoBehaviour
 {
     public Text text;
-    public Text name;
+    public Text title;
     public Text keuzeLinks;
     public Text keuzeRechts;
     public int L = 0;
@@ -14,7 +14,7 @@ public class TextController : MonoBehaviour
 
     void Start()
     {
-        name.text = "...";
+        title.text = "...";
         text.text = "Finally... After hours of driving, here I am.";
         keuzeLinks.text = "Test links";
         keuzeRechts.text = "Test Rechts";
@@ -24,7 +24,7 @@ public class TextController : MonoBehaviour
     {
         if (L == 0 && R == 0)
         {
-            name.text = "Je eerste beslissing";
+            title.text = "Je eerste beslissing";
             text.text = "Gefeliciteerd met je nieuwe baan. Je baan kent" +
                 " veel belangrijke verantwoordelijkheden, zoals je laten omkopen" +
                 " om nieuwe treinen te kopen of op vakantie gaan. We beginnen meteen" +
@@ -36,7 +36,7 @@ public class TextController : MonoBehaviour
         }
         if (L == 1 && R == 0)
         {
-            name.text = "Blaadjes op het spoor";
+            title.text = "Blaadjes op het spoor";
             text.text = "Herfst is begonnen en daarmee arriveert staatsvijand" +
                 " nummer één ook: vallende blaadjes. We moeten ons indekken " +
                 "want anders loopt het spoor hopeloos vast. Als we minder treinen" +
@@ -48,7 +48,7 @@ public class TextController : MonoBehaviour
         }
         if (L == 0 && R == 1)
         {
-            name.text = "Boom op spoor";
+            title.text = "Boom op spoor";
             text.text = "Ergens tussen Den helder en Maastricht is er een boom op het spoor" +
                 " terecht gekomen na de storm van gisteravond. We hebben twee opties," +
                 " we laten de boom lekker liggen totdat ‘ie is weggerot en laten de" +
