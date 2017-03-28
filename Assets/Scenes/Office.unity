@@ -419,6 +419,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 493354707}
+<<<<<<< HEAD
   m_Layer: 5
   m_Name: Sliding Area
   m_TagString: Untagged
@@ -431,6 +432,65 @@ RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 493354706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 123081876}
+  m_Father: {fileID: 1789465499}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: -20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &499408387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 499408388}
+  - component: {fileID: 499408390}
+  - component: {fileID: 499408389}
+  m_Layer: 5
+  m_Name: Item Checkmark
+=======
+  m_Layer: 5
+  m_Name: Sliding Area
+>>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+<<<<<<< HEAD
+--- !u!224 &499408388
+=======
+--- !u!224 &493354707
+>>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 499408387}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 501236641}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 10, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+=======
   m_GameObject: {fileID: 493354706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -480,6 +540,7 @@ RectTransform:
   m_AnchoredPosition: {x: 10, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+>>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 --- !u!114 &499408389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,6 +659,7 @@ MonoBehaviour:
 --- !u!1 &592160395
 GameObject:
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -617,6 +679,27 @@ Light:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+=======
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 592160397}
+  - component: {fileID: 592160396}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &592160396
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+>>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 =======
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1225,7 +1308,10 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 --- !u!114 &1356007820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1243,6 +1329,9 @@ MonoBehaviour:
   pageIndex: 0
   growthRate: 0
   fadeRate: 0
+<<<<<<< HEAD
+>>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
+=======
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 --- !u!1 &1408075342
 GameObject:
