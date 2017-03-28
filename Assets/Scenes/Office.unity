@@ -422,8 +422,11 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
+=======
+>>>>>>> parent of 0e45033... go
 =======
 >>>>>>> parent of 0e45033... go
   m_Layer: 5
@@ -489,6 +492,7 @@ RectTransform:
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   m_GameObject: {fileID: 493354706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -556,6 +560,8 @@ RectTransform:
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 =======
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
+=======
+>>>>>>> parent of 0e45033... go
 =======
 >>>>>>> parent of 0e45033... go
 --- !u!114 &499408389
@@ -744,6 +750,7 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -773,6 +780,8 @@ Light:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 =======
+=======
+>>>>>>> parent of 0e45033... go
 =======
 >>>>>>> parent of 0e45033... go
   m_ObjectHideFlags: 0
@@ -1584,11 +1593,15 @@ RectTransform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 =======
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
+=======
+=======
+>>>>>>> parent of 0e45033... go
 =======
 =======
 >>>>>>> parent of 0e45033... go
@@ -1612,10 +1625,13 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 =======
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 =======
+=======
+>>>>>>> parent of 0e45033... go
 =======
 >>>>>>> parent of 0e45033... go
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
