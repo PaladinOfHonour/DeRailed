@@ -8,31 +8,16 @@ using UnityEngine;
 /// </summary>
 public class CanvasSwap : MonoBehaviour
 {
-    public List<GameObject> pageList;
+    public List<GameObject> pageList = new List<GameObject>();
     public GameObject activePage;
     public CanvasGroup canvG;
-    public int pageIndex;
-    private int fade;
-    public float growthRate, fadeRate;
-
-    /// <summary>
-    /// Initiates fields
-    /// </summary>
-    void Start()
-    {
-        pageList = new List<GameObject>();
-        pageIndex = 0;
-
-        /*
-        fade = 0  -> No fade
-        fade = 1  -> Fading In
-        fade = 2  -> Fading Out
-        */
-
-        fade = 0;
-        growthRate = 0.5f;
-        fadeRate = 8f;
-    }
+    public int pageIndex = 0;
+    private int fade = 0;
+    public float growthRate = 0.5f;
+    public float fadeRate = 8f;
+    /* fade = 0  -> No fade
+    fade = 1  -> Fading In
+    fade = 2  -> Fading Out */
 
     private void Update()
     {
@@ -58,6 +43,7 @@ public class CanvasSwap : MonoBehaviour
     /// <param name="newPage">The Index of the page to be shown</param>
     public void NewPage(int newPage)
     {
+        Debug.Log("logged");
         //checks if the newpage isn't the same as the active page
         if (newPage != pageIndex)
         {
@@ -78,6 +64,8 @@ public class CanvasSwap : MonoBehaviour
         canvG.alpha = 1f;
         fade = 2;
 
+        Debug.Log(newPage);
+        Debug.Log(pageList);
         //fade 
         //routine must return -> def 0
         while (canvG.alpha > 0) yield return 0;
