@@ -421,8 +421,11 @@ GameObject:
   - component: {fileID: 493354707}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
+=======
+>>>>>>> parent of 0e45033... go
   m_Layer: 5
   m_Name: Sliding Area
   m_TagString: Untagged
@@ -462,25 +465,16 @@ GameObject:
   - component: {fileID: 499408389}
   m_Layer: 5
   m_Name: Item Checkmark
-=======
-  m_Layer: 5
-  m_Name: Sliding Area
->>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 --- !u!224 &499408388
-=======
---- !u!224 &493354707
->>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 499408387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -494,6 +488,7 @@ RectTransform:
   m_AnchoredPosition: {x: 10, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 =======
   m_GameObject: {fileID: 493354706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -561,6 +556,8 @@ RectTransform:
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 =======
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
+=======
+>>>>>>> parent of 0e45033... go
 --- !u!114 &499408389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -746,6 +743,7 @@ Transform:
 GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -775,6 +773,8 @@ Light:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 =======
+=======
+>>>>>>> parent of 0e45033... go
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -794,7 +794,6 @@ Light:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
->>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 =======
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1584,11 +1583,15 @@ RectTransform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 =======
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
+=======
+=======
+>>>>>>> parent of 0e45033... go
 --- !u!114 &1356007820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1608,10 +1611,13 @@ MonoBehaviour:
   fadeRate: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 =======
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 =======
+=======
+>>>>>>> parent of 0e45033... go
 >>>>>>> parent of 4b66c1e... Merge branch 'master' of https://github.com/PaladinOfHonour/DeRailed
 --- !u!1 &1408075342
 GameObject:
