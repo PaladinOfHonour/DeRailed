@@ -23,6 +23,7 @@ E:/Paladin of Honour/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll
 E:/Paladin of Honour/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
 E:/Paladin of Honour/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll
@@ -48,3 +49,6 @@ C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/Unit
 >>>>>>> c46658e4dde70cd67b0fdd96033a50d37feba657
 >>>>>>> 4b66c1edf647320955906a004dd14dc90f7d850c
 C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll
+=======
+C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/2015/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll
+>>>>>>> parent of 83d4342... merge fix
