@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\DisplayInit.cs" />
     <Compile Include="Assets\Scripts\Economy.cs" />
     <Compile Include="Assets\Scripts\MoneyBar.cs" />
+    <Compile Include="Assets\Scripts\PopBar.cs" />
     <Compile Include="Assets\Scripts\TextController.cs" />
   </ItemGroup>
   <ItemGroup>

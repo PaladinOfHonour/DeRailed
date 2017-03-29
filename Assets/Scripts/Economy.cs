@@ -11,16 +11,15 @@ public class Economy : MonoBehaviour
     public static double popularity = 70;
     public const double startPop = 70;
     public static double income = 10000;
-    public static double trust = 0.5;
+    //public static double trust = 0.5;
 
     // Update is called once per frame
     void Update()
     {
         income -= (money / startMoney) * Time.deltaTime;
-        trust -= (popularity / startPop) * Time.deltaTime;
 
         money += income * Time.deltaTime;
-        popularity += trust * Time.deltaTime;
+        //popularity += trust * Time.deltaTime;
 
         //Debug.Log("Money: " + money + "\nPopularity: " + popularity);
     }
