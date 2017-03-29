@@ -130,7 +130,7 @@ public class TextController : MonoBehaviour
                 " Dit kan zorgen voor langere reistijden.'";
         }
 
-        if (L == 1 && R == 0)
+        if (L == 0 && R == 1)
         {
             NewsTitle.text = "";
             NewsContent.text = "";
@@ -164,13 +164,17 @@ public class TextController : MonoBehaviour
         {
             NewsTitle.text = "Alles komt wel goed";
             NewsContent.text = "Ondanks al het glade weer heeft de NS besloten om treinen gewoon te laten rijden." +
-                " 'wij willen onze klanten geen extra";
+                " ‘Wij willen onze klanten geen extra lange reistijden geven’ zegt de NS." +
+                " ‘Blaadjes op het spoor kunnen geen gevaar leveren voor onze treinen. Dus laat ze maar reiden, wat kan er mis gaan’ zegt de ceo van de NS. ";
         }
 
-        if (L == 1 && R == 0)
+        if (L == 0 && R == 1)
         {
-            NewsTitle.text = "";
-            NewsContent.text = "";
+            NewsTitle.text = "Opruimen die stronk";
+            NewsContent.text = "De storm van afgelopen nacht zorgde ervoor dat een boom " +
+                "was omgevallen Ergens tussen Den helder en Maastricht. De NS heeft die met" +
+                " man en macht snel opgeruimd. Er was maar een klein beetje vertraging en verder" +
+                " geen probleem. Een goede keuze als je het aan mij vraagt.";
         }
 
         if (L == 1 && R == 0)
