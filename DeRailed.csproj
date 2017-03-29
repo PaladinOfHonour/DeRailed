@@ -81,9 +81,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DisplayInit.cs" />
     <Compile Include="Assets\Scripts\CanvasSwap.cs" />
-    <Compile Include="Assets\Scripts\PopUpW.cs" />
+    <Compile Include="Assets\Scripts\DisplayInit.cs" />
+    <Compile Include="Assets\Scripts\Economy.cs" />
+    <Compile Include="Assets\Scripts\MoneyBar.cs" />
     <Compile Include="Assets\Scripts\TextController.cs" />
   </ItemGroup>
   <ItemGroup>
