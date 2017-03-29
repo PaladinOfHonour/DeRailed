@@ -1697,9 +1697,9 @@ MonoBehaviour:
   - {fileID: 1701224843}
   activePage: {fileID: 1701224843}
   canvG: {fileID: 0}
-  pageIndex: 46
-  growthRate: 1.6
-  fadeRate: 2.32
+  pageIndex: 0
+  growthRate: 0.5
+  fadeRate: 8
 --- !u!225 &1356007821
 CanvasGroup:
   m_ObjectHideFlags: 0
