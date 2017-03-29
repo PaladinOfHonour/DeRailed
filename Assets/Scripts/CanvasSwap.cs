@@ -26,10 +26,10 @@ public class CanvasSwap : MonoBehaviour
         {
             case 1:
                 canvG.alpha += fadeRate * Time.deltaTime;
+                activePage.transform.localScale += Vector3.one * growthRate * Time.deltaTime;
                 break;
             case 2:
                 canvG.alpha -= fadeRate * Time.deltaTime;
-                activePage.transform.localScale = Vector3.one * growthRate * Time.deltaTime;
                 break;
             case 0:
             default:
@@ -43,7 +43,6 @@ public class CanvasSwap : MonoBehaviour
     /// <param name="newPage">The Index of the page to be shown</param>
     public void NewPage(int newPage)
     {
-        Debug.Log("logged");
         //checks if the newpage isn't the same as the active page
         if (newPage != pageIndex)
         {
@@ -64,8 +63,6 @@ public class CanvasSwap : MonoBehaviour
         canvG.alpha = 1f;
         fade = 2;
 
-        Debug.Log(newPage);
-        Debug.Log(pageList);
         //fade 
         //routine must return -> def 0
         while (canvG.alpha > 0) yield return 0;
@@ -79,7 +76,7 @@ public class CanvasSwap : MonoBehaviour
         activePage.SetActive(true);
         canvG = activePage.GetComponent<CanvasGroup>();
         canvG.alpha = 0f;
-        activePage.transform.localScale = Vector3.one * 1f;
+        activePage.transform.localScale = Vector3.one * 0.95f;
         fade = 1;
 
         while (canvG.alpha < 1f || activePage.transform.localScale.x < 1f) yield return 0;
@@ -88,5 +85,7 @@ public class CanvasSwap : MonoBehaviour
         canvG.alpha = 1f;
         activePage.transform.localScale = Vector3.one;
         fade = 0;
+
+        Debug.Log("switch complete");
     }
 }
