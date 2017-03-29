@@ -9,8 +9,11 @@ public class TextController : MonoBehaviour
     public Text name;
     public Text keuzeLinks;
     public Text keuzeRechts;
+    public Text NewsTitle;
+    public Text NewsContent;
     public int L = 0;
     public int R = 0;
+    
 
     void Start()
     {
@@ -18,6 +21,18 @@ public class TextController : MonoBehaviour
         text.text = "Finally... After hours of driving, here I am.";
         keuzeLinks.text = "Test links";
         keuzeRechts.text = "Test Rechts";
+        NewsTitle.text = "Dit is een krante bericht xD";
+        NewsContent.text = "CONTENT OP OP";
+    }
+
+   public void Lupper()
+    {
+        L = L + 1;
+    }
+
+    public void Rupper()
+    {
+        R = R + 1;
     }
 
     private void Update()
