@@ -79,7 +79,7 @@ public class CanvasSwap : MonoBehaviour
         activePage.SetActive(true);
         canvG = activePage.GetComponent<CanvasGroup>();
         canvG.alpha = 0f;
-        activePage.transform.localScale = Vector3.one * 0.95f;
+        activePage.transform.localScale = Vector3.one * 1f;
         fade = 1;
 
         while (canvG.alpha < 1f || activePage.transform.localScale.x < 1f) yield return 0;

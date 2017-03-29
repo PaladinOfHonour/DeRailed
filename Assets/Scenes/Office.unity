@@ -626,7 +626,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1160273900}
-        m_MethodName: Rupper
+        m_MethodName: NewsRechtsUpdate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -639,6 +639,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1356007820}
         m_MethodName: NewPage
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1160273900}
+        m_MethodName: Rupper
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -759,7 +770,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1160273900}
-        m_MethodName: Lupper
+        m_MethodName: NewsLinksUpdate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -772,6 +783,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1356007820}
         m_MethodName: NewPage
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1160273900}
+        m_MethodName: Lupper
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1356,8 +1378,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1276, y: 780}
-  m_SizeDelta: {x: 196, y: 196}
+  m_AnchoredPosition: {x: 1310, y: 814}
+  m_SizeDelta: {x: 162, y: 162}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &904920026
 MonoBehaviour:
@@ -1575,8 +1597,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1276, y: 780}
-  m_SizeDelta: {x: 196, y: 196}
+  m_AnchoredPosition: {x: 1310, y: 814}
+  m_SizeDelta: {x: 162, y: 162}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1043312937
 MonoBehaviour:
@@ -1821,9 +1843,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 507845575}
-  name: {fileID: 166690316}
+  title: {fileID: 166690316}
   keuzeLinks: {fileID: 17196556}
   keuzeRechts: {fileID: 1879938099}
+  NewsTitle: {fileID: 580250542}
+  NewsContent: {fileID: 1350090889}
   L: 0
   R: 0
 --- !u!4 &1160273901
@@ -2080,7 +2104,7 @@ MonoBehaviour:
   activePage: {fileID: 1701224843}
   canvG: {fileID: 0}
   pageIndex: 0
-  growthRate: 0.5
+  growthRate: 1
   fadeRate: 8
 --- !u!225 &1356007821
 CanvasGroup:
@@ -3228,8 +3252,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1276, y: 780}
-  m_SizeDelta: {x: 196, y: 196}
+  m_AnchoredPosition: {x: 1310, y: 814}
+  m_SizeDelta: {x: 162, y: 162}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1918995301
 MonoBehaviour:
