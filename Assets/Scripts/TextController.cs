@@ -56,6 +56,7 @@ public class TextController : MonoBehaviour
                 " Hij zal velen beslissingen moeten maken als het nieuwe bestuurslid." +
                 " Wat kan er misgaan...";
         }
+
         if (L == 1 && R == 0)
         {
             title.text = "Blaadjes op het spoor";
@@ -66,9 +67,9 @@ public class TextController : MonoBehaviour
                 " maar dan wordt het nog drukker in de treinen die wel rijden." +
                 " We kunnen ook gewoon de treinen laten en YOLO hopen dat alles goed komt.";
             keuzeLinks.text = "Minder, minder, minder treinen";
-            keuzeRechts.text = "Alles komt wel goed";
-            
+            keuzeRechts.text = "Alles komt wel goed";       
         }
+
         if (L == 0 && R == 1)
         {
             title.text = "Boom op spoor";
@@ -79,35 +80,59 @@ public class TextController : MonoBehaviour
                 " dat levert wel vertragingen op, of we halen de boom weg maar dat kost geld.";
             keuzeLinks.text = "Lekker laten liggen";
             keuzeRechts.text = "Weghalen";
-
-
         }
+
         if (L == 2 && R == 0)
         {
-            title.text = "Boom op spoor";
-            text.text = "Ergens tussen Den helder en Maastricht is er een boom op het spoor" +
-                " terecht gekomen na de storm van gisteravond. We hebben twee opties," +
-                " we laten de boom lekker liggen totdat ‘ie is weggerot en laten de" +
-                " treinen tot die tijd over het andere spoor rijden (twee richtingen op één spoor)," +
-                " dat levert wel vertragingen op, of we halen de boom weg maar dat kost geld.";
-            keuzeLinks.text = "Lekker laten liggen";
-            keuzeRechts.text = "Weghalen";
-
-
+            title.text = "Ontsporing in Vlissingen";
+            text.text = "Oh hemel. We krijgen net te horen dat er een trein is" +
+                " ontspoord net buiten het station van Vlissingen (Zeeland)." +
+                " Uhm… tja, zeeland. Er wordt gesuggereerd dat de sporen te glad" +
+                " waren door blaadjes. Helaas moeten we hier toch wel iets aan doen" +
+                " want we kunnen niet blijven zitten wachten totdat het wrak vanzelf wegrot." +
+                " Of misschien wel… We kunnen meteen een reddingsoperatie op touw zetten" +
+                " om het spoor zo snel mogelijk vrij te krijgen. We kunnen ook eerst nog" +
+                " een kop koffie nemen en niet al te veel haast maken.";
+            keuzeLinks.text = "Eerst kop koffie";
+            keuzeRechts.text = "Meteen opruimen";
         }
-        if (L == 0 && R == 1)
+
+        if (L == 1 && R == 1)
         {
-            title.text = "Boom op spoor";
-            text.text = "Ergens tussen Den helder en Maastricht is er een boom op het spoor" +
-                " terecht gekomen na de storm van gisteravond. We hebben twee opties," +
-                " we laten de boom lekker liggen totdat ‘ie is weggerot en laten de" +
-                " treinen tot die tijd over het andere spoor rijden (twee richtingen op één spoor)," +
-                " dat levert wel vertragingen op, of we halen de boom weg maar dat kost geld.";
-            keuzeLinks.text = "Lekker laten liggen";
-            keuzeRechts.text = "Weghalen";
+            title.text = "Boze reizigers";
+            text.text = "Reizigers zijn boos over de kwaliteit van de spoorwegen" +
+                " en de treinen. We hebben hier mogelijk een aanstaande PR-ramp" +
+                " dus daar moeten we iets aan doen. We kunnen gewoon een persconferentie" +
+                " houden om wat vragen te beantwoorden en een paar handen schudden of we kunnen" +
+                " (heel pijnlijk) onze service daadwerkelijk verbeteren maar dat kost klauwen met geld.";
+            keuzeLinks.text = "Persconferentie";
+            keuzeRechts.text = "Service verbeteren";
         }
 
-       
+        if (L == 2 && R == 0)
+        {
+            title.text = "";
+            text.text = "";
+            keuzeLinks.text = "";
+            keuzeRechts.text = "";
+        }
+
+        if (L == 2 && R == 0)
+        {
+            title.text = "";
+            text.text = "";
+            keuzeLinks.text = "";
+            keuzeRechts.text = "";
+        }
+
+        if (L == 2 && R == 0)
+        {
+            title.text = "";
+            text.text = "";
+            keuzeLinks.text = "";
+            keuzeRechts.text = "";
+        }
+
     }
     public void NewsLinksUpdate()
     {
@@ -132,17 +157,20 @@ public class TextController : MonoBehaviour
 
         if (L == 0 && R == 1)
         {
-            NewsTitle.text = "";
-            NewsContent.text = "";
+            NewsTitle.text = "Wat een blunder";
+            NewsContent.text = "De storm van afgelopen nacht zorgde ervoor dat een boom" +
+                " was omgevallen Ergens tussen Den helder en Maastricht. Hierdoor is er een trein tegenaan gebotst." +
+                " Gelukkig zijn er geen doden, maar wel 12 gewonden." + 
+                " achteraf bleek dat de NS van de boom wist maar er niks aan heeft gedaan.";
         }
 
-        if (L == 1 && R == 0)
+        if (L == 2 && R == 0)
         {
             NewsTitle.text = "";
             NewsContent.text = "";
         }
 
-        if (L == 1 && R == 0)
+        if (L == 1 && R == 1)
         {
             NewsTitle.text = "";
             NewsContent.text = "";
@@ -177,7 +205,7 @@ public class TextController : MonoBehaviour
                 " geen probleem. Een goede keuze als je het aan mij vraagt.";
         }
 
-        if (L == 1 && R == 0)
+        if (L == 2 && R == 0)
         {
             NewsTitle.text = "";
             NewsContent.text = "";
