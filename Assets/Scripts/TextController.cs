@@ -12,6 +12,8 @@ public class TextController : MonoBehaviour
     public Text NewsTitle;
     public Text NewsContent;
     public Text Steelwaard;
+    public Text MoneyMinute;
+    public Text SteelMoneyMinute;
 
     public int L = 0;
     public int R = 0;
@@ -39,6 +41,8 @@ public class TextController : MonoBehaviour
     private void Update()
     {
         Steelwaard.text = Economy.siphon.ToString() + "%";
+        MoneyMinute.text = Economy.MoneyMinute.ToString();
+        SteelMoneyMinute.text = Economy.laundredMinute.ToString();
 
         if (L == 0 && R == 0)
         {

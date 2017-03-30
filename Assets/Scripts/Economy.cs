@@ -16,6 +16,8 @@ public class Economy : MonoBehaviour
     public static double income = 1000000;              //10000 : balanced
     public static double siphon = 0;
     public static double trust = 0.5;
+    public static double laundredMinute = 0;
+    public static double MoneyMinute = 0;
     public bool passiveTrustGain = false;               //determines wether the player passively gains trust/pop
 
     /// <summary>
@@ -23,12 +25,13 @@ public class Economy : MonoBehaviour
     /// </summary>
     void Update()
     {
-        income -= (money / startMoney) * Time.deltaTime;                    //income decreases as capital increases
+        //income -= (money / startMoney) * Time.deltaTime;                    //income decreases as capital increases (optional)
 
         //money update logic
-        money += (income - ((siphon * income) / 100)) * Time.deltaTime;             
+        MoneyMinute = (income - ((siphon * income) / 100));
+        money += MoneyMinute * Time.deltaTime;             
         launderedMoney += ((siphon * income) / 100) * Time.deltaTime;        //adds siphoned money to LaundredMoney
-
+        laundredMinute = ((siphon * income) / 100);
         if (passiveTrustGain) popularity += trust * Time.deltaTime;         //set Trustgain bool "true" if you wish for passive trust gain
     }
 
