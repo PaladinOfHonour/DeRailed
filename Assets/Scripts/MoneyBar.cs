@@ -7,6 +7,7 @@ using UnityEngine;
 /// </summary>
 public class MoneyBar : MonoBehaviour
 {
+    public Component image;
     public float x, y;              //position coords of the bar-element
 
     public GUIStyle MyGUIStyle;     //allows for custom GUIoptions in editor
@@ -17,6 +18,7 @@ public class MoneyBar : MonoBehaviour
     private void OnGUI()
     {
         //draws a Box-element which width is determined by the NS' money
+        GUI.color = Color.green;
         GUI.Box(new Rect(x, y, 0.1f * Screen.width * (float)(Economy.money / Economy.startMoney), 0.1f * Screen.height), "MoneyBar", MyGUIStyle);
     }
 }

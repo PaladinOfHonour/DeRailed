@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\CanvasSwap.cs" />
     <Compile Include="Assets\Scripts\DisplayInit.cs" />
     <Compile Include="Assets\Scripts\Economy.cs" />
+    <Compile Include="Assets\Scripts\EconomyValues.cs" />
     <Compile Include="Assets\Scripts\LaunderdMoneyBar.cs" />
     <Compile Include="Assets\Scripts\MoneyBar.cs" />
     <Compile Include="Assets\Scripts\PopBar.cs" />
