@@ -18,7 +18,9 @@ public class Economy : MonoBehaviour
     public static double trust = 0.5;
     public static double laundredMinute = 0;
     public static double MoneyMinute = 0;
+    public static double MoneyMultiplier = 1;
     public bool passiveTrustGain = false;               //determines wether the player passively gains trust/pop
+    
 
     /// <summary>
     /// Adjust Economy values; called once per frame
@@ -28,7 +30,7 @@ public class Economy : MonoBehaviour
         //income -= (money / startMoney) * Time.deltaTime;                    //income decreases as capital increases (optional)
 
         //money update logic
-        MoneyMinute = (income - ((siphon * income) / 100));
+        MoneyMinute = ((income * MoneyMultiplier) - ((siphon * income) / 100));
         money += MoneyMinute * Time.deltaTime;             
         launderedMoney += ((siphon * income) / 100) * Time.deltaTime;        //adds siphoned money to LaundredMoney
         laundredMinute = ((siphon * income) / 100);

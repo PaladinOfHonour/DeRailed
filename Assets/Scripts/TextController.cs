@@ -148,6 +148,7 @@ public class TextController : MonoBehaviour
             NewsContent.text = "Er is nieuws binnen over de nieuwe CEO, het blijkt dat zijn eerste beslissing genomen is." +
                 "Hij wilt op een dure stoel zitten van tijgervel. Dit zal de NS wel veel geld kosten." +
                 "Als dit maar goed komt met de rest van de jaren die hij nog bij de NS moet werken.";
+            Economy.money -= 10000000000000000;
 
 
         }

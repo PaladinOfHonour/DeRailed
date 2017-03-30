@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\MoneyBar.cs" />
     <Compile Include="Assets\Scripts\PopBar.cs" />
     <Compile Include="Assets\Scripts\TextController.cs" />
+    <Compile Include="Assets\Scripts\Upgrades.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
