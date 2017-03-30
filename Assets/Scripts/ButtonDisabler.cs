@@ -9,15 +9,17 @@ public class ButtonDisabler : MonoBehaviour
     public Button Telefoon;
     public Sprite PhoneButton;
     public Sprite PhoneButton_disable;
+    public AudioPlayer sound;
     float TelefoonOvergaan = 5;
     float TelefoonCooldown = 10;
     private bool ButtonPresbaar;
 
-    private void Start()
+    void Start()
     {
         Telefoon = GetComponent<Button>();
         Telefoon.interactable = false;
         ButtonPresbaar = false;
+        if (sound != null) sound.AddAudio("telephone", true, true, 1f, sound.FindClip("knightrider"));
     }
 
     public void ChangeButton()
@@ -28,6 +30,7 @@ public class ButtonDisabler : MonoBehaviour
 
     public void TelefoonRing()
     {
+        if (!sound.FindSource("telephone").isPlaying) sound.Play("telephone");
         Telefoon.interactable = true;
         Debug.Log("TELEFOON GAAT OVER");
         TelefoonOvergaan -= Time.deltaTime;
@@ -35,6 +38,7 @@ public class ButtonDisabler : MonoBehaviour
         if (TelefoonOvergaan <= 0)
         {
             //telefoon niet opgenomen.
+            sound.Stop("telephone");
             ButtonPresbaar = false;
             TelefoonOvergaan = 5;
             Debug.Log("TELAAT");
