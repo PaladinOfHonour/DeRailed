@@ -81,6 +81,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ButtonDisabler.cs" />
     <Compile Include="Assets\Scripts\CanvasSwap.cs" />
     <Compile Include="Assets\Scripts\DisplayInit.cs" />
     <Compile Include="Assets\Scripts\Economy.cs" />

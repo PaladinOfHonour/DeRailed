@@ -3610,7 +3610,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 872878552}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 500
   m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
@@ -3757,6 +3757,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1713425694}
+        m_MethodName: TelefoonOpnemen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1713425692
@@ -3800,9 +3811,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1713425689}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44dce1ebe1c6c2645b15b77939274d87, type: 3}
+  m_Script: {fileID: 11500000, guid: 579bc63d4c04a554e8763f39fb72d296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Telefoon: {fileID: 1713425691}
+  PhoneButton: {fileID: 21300000, guid: f40b9296ab754da42a6b926f4d9c47b7, type: 3}
+  PhoneButton_disable: {fileID: 21300000, guid: f40b9296ab754da42a6b926f4d9c47b7,
+    type: 3}
 --- !u!1 &1725265067
 GameObject:
   m_ObjectHideFlags: 0
