@@ -16,6 +16,13 @@ public class TextController : MonoBehaviour
     public Text MoneyMinute;
     public Text SteelMoneyMinute;
 
+    public Text EndScore;
+    public Text EndMoneyNS;
+    public Text EndMoneyZelf;
+    public Text EndPopulariteit;
+
+    public int n;
+
     public int L = 0;
     public int R = 0;
 
@@ -29,6 +36,11 @@ public class TextController : MonoBehaviour
         NewsTitle.text = "Dit is een krante bericht xD";
         NewsContent.text = "CONTENT OP OP";
         Gevolg.text = "U bent Gekozen als CEO van de NS";
+
+        EndScore.text = "TESTScore";
+        EndPopulariteit.text = "TESTPop";
+        EndMoneyZelf.text = "TestMonZELF";
+        EndMoneyNS.text = "TestMonNS";
     }
 
     public void Lupper()
@@ -252,9 +264,30 @@ public class TextController : MonoBehaviour
         }
         if (L == 2 && R == 2)
         {
-            //RNG roll Aanklaging
-            NewsTitle.text = "";
-            NewsContent.text = "WORDT AAN GEWERKT";
+            n = Random.Range(0, 1);
+            Debug.Log(n);
+            if (n == 0)
+            {
+                //gewonnen
+                NewsTitle.text = "Rechtzaak met NS";
+                NewsContent.text = "Gister nacht is de NS in de rechtbanken geweest." +
+                    " Het ging hier om veel geld in aangezien een Medewerkers meer geld wilden. " +
+                    " De rechter heeft besloten dat de medewerkers genoeg betaald krijgen.";
+                Gevolg.text = "Populariteit +15%";
+                Economy.popularity += 15;
+
+            }
+            if (n == 1)
+            {
+                //verloren
+                NewsTitle.text = "Rechtzaak met NS";
+                NewsContent.text = "Gister nacht is de NS in de rechtbanken geweest." +
+                    " Het ging hier om veel geld in aangezien een Medewerkers meer geld wilden. " +
+                    " De rechter heeft besloten dat de medewerkers niet genoeg betaald krijgen.";
+                Gevolg.text = "Populariteit +15% | Geld - 5000";
+                Economy.popularity += 15;
+                Economy.money -= 5000;
+            }
         }
     }
 
@@ -333,9 +366,32 @@ public class TextController : MonoBehaviour
 
         if (L == 1 && R == 2)
         {
-            //RNG roll Aanklaging
-            NewsTitle.text = "";
-            NewsContent.text = "WORDT AAN GEWERKT";
+
+            n = Random.Range(0, 1);
+            Debug.Log(n);
+            if (n == 0)
+            {
+                //gewonnen
+                NewsTitle.text = "Rechtzaak met NS";
+                NewsContent.text = "Gister nacht is de NS in de rechtbanken geweest." +
+                    " Het ging hier om veel geld in aangezien een 'koekjestrommel' fabrikant werd aangeklaacht. " +
+                    " De rechter heeft besloten dat de fabrikant moet betalen.";
+                Gevolg.text = "Populariteit +15% | Geld + 5000";
+                Economy.popularity += 15;
+                Economy.money += 5000;
+
+            }
+            if (n == 1)
+            {
+                //verloren
+                NewsTitle.text = "Rechtzaak met NS";
+                NewsContent.text = "Gister nacht is de NS in de rechtbanken geweest." +
+                    " Het ging hier om veel geld in aangezien een 'koekjestrommel' fabrikant werd aangeklaacht. " +
+                    " De rechter heeft besloten dat de NS moet betalen.";
+                Gevolg.text = "Populariteit +15% | Geld - 5000";
+                Economy.popularity += 15;
+                Economy.money -= 5000;
+            }
         }
         if (L == 2 && R == 2)
         {

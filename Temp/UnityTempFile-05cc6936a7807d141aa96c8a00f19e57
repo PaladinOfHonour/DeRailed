@@ -88,6 +88,7 @@ Assets/Scripts/Economy.cs
 Assets/Scripts/EconomyValues.cs
 Assets/Scripts/LaunderdMoneyBar.cs
 Assets/Scripts/MoneyBar.cs
+Assets/Scripts/OnClickHandler.cs
 Assets/Scripts/PopBar.cs
 Assets/Scripts/TextController.cs
 Assets/Scripts/Upgrades.cs

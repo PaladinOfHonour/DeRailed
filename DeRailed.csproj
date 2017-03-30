@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\EconomyValues.cs" />
     <Compile Include="Assets\Scripts\LaunderdMoneyBar.cs" />
     <Compile Include="Assets\Scripts\MoneyBar.cs" />
+    <Compile Include="Assets\Scripts\OnClickHandler.cs" />
     <Compile Include="Assets\Scripts\PopBar.cs" />
     <Compile Include="Assets\Scripts\TextController.cs" />
     <Compile Include="Assets\Scripts\Upgrades.cs" />

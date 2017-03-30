@@ -40,6 +40,7 @@ public class PopBar : MonoBehaviour
     private void OnGUI()
     {
         //draws a Box-element which width is determined by the player's popularity
+        GUI.color = Color.red;
         GUI.Box(new Rect(x, y, width, 0.1f * Screen.height), text, MyGUIStyle);
     }
 }

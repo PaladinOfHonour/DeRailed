@@ -15,6 +15,7 @@ public class CanvasSwap : MonoBehaviour
     private int fade = 0;
     public float growthRate = 0.5f;
     public float fadeRate = 8f;
+    public static bool GameOver = false;
     /* fade = 0  -> No fade
     fade = 1  -> Fading In
     fade = 2  -> Fading Out */
@@ -35,6 +36,15 @@ public class CanvasSwap : MonoBehaviour
             default:
                 break;
         }
+        if (Economy.money <= 0 || Economy.popularity <= 0)
+        {
+            GameOver = true;
+        }
+        if (GameOver == true)
+        {
+            Debug.Log("Check");
+            NewPage(7);
+        }
     }
 
     /// <summary>
@@ -43,12 +53,17 @@ public class CanvasSwap : MonoBehaviour
     /// <param name="newPage">The Index of the page to be shown</param>
     public void NewPage(int newPage)
     {
+        Debug.Log("CHECK 2");
+        Debug.Log(newPage);
+        Debug.Log(pageIndex);
+
         //checks if the newpage isn't the same as the active page
-        if (newPage != pageIndex)
+        if (newPage != pageIndex || GameOver == true)
         {
             //starts a coroutine [unity special method] that swaps between canvasses
             StartCoroutine("SwapPage", newPage);
         }
+
     }
 
     /// <summary>

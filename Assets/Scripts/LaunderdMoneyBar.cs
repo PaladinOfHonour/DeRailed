@@ -40,6 +40,7 @@ public class LaunderdMoneyBar : MonoBehaviour
     private void OnGUI()
     {
         //draws a Box-element which width is determined by the player's laundred money
+        GUI.color = Color.blue;
         GUI.Box(new Rect(x, y, width, 0.1f * Screen.height), text, MyGUIStyle);
     }
 }
