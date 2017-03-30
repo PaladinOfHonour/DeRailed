@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// draws a bar that represents the player's popularity
+/// draws a bar that represents the player's laundred money
 /// </summary>
-public class PopBar : MonoBehaviour
+public class LaunderdMoneyBar : MonoBehaviour
 {
     public float x, y;              //position coords of the bar-element
 
@@ -16,7 +16,7 @@ public class PopBar : MonoBehaviour
     /// </summary>
     private void OnGUI()
     {
-        //draws a Box-element which width is determined by the NS' money
-        GUI.Box(new Rect(x, y, 0.1f * Screen.width * (float)(Economy.popularity / Economy.startPop), 0.1f * Screen.height), "PopBar", MyGUIStyle);
+        //draws a Box-element which width is determined by the player's laundred money
+        GUI.Box(new Rect(x, y, 0.1f * Screen.width * (float)(Economy.launderedMoney / Economy.startMoney), 0.1f * Screen.height), "LaunderedBar", MyGUIStyle);
     }
 }
