@@ -11,10 +11,11 @@ public class TextController : MonoBehaviour
     public Text keuzeRechts;
     public Text NewsTitle;
     public Text NewsContent;
-    public int L = 0;
-    public int R = 0;
     public Text Steelwaard;
 
+    public int L = 0;
+    public int R = 0;
+    
     void Start()
     {
         title.text = "...";

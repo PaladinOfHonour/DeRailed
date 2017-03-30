@@ -71,6 +71,7 @@ public class ButtonDisabler : MonoBehaviour
     public void TelefoonOpnemen()
     {
         ButtonPresbaar = false;
+        TelefoonOvergaan = 5;
     }
 
 
