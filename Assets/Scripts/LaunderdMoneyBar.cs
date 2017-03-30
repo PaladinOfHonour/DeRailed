@@ -8,8 +8,31 @@ using UnityEngine;
 public class LaunderdMoneyBar : MonoBehaviour
 {
     public float x, y;              //position coords of the bar-element
+    public string text;             //leave empty for no text in the bar
+    public float widthMax;          //Max width the bar can grow; Leave Empty for no Cap
+    private float width;
+    private string oldText;
 
     public GUIStyle MyGUIStyle;     //allows for custom GUIoptions in editor
+
+    void Update()
+    {
+        width = 0.1f * Screen.width * (float)(Economy.launderedMoney / Economy.startMoney);
+        if (width >= widthMax && text == "")
+        {
+            width = widthMax;
+            oldText = text;
+            text = "Max";
+            return;
+        }
+        else if (width >= widthMax)
+        {
+            width = widthMax;
+            return;
+        }
+
+        text = oldText;                  //if not max size: reset text to previous
+    }
 
     /// <summary>
     /// Draw/Render loop for all GUI-elements
@@ -17,6 +40,6 @@ public class LaunderdMoneyBar : MonoBehaviour
     private void OnGUI()
     {
         //draws a Box-element which width is determined by the player's laundred money
-        GUI.Box(new Rect(x, y, 0.1f * Screen.width * (float)(Economy.launderedMoney / Economy.startMoney), 0.1f * Screen.height), "LaunderedBar", MyGUIStyle);
+        GUI.Box(new Rect(x, y, width, 0.1f * Screen.height), text, MyGUIStyle);
     }
 }

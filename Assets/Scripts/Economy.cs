@@ -9,11 +9,11 @@ public class Economy : MonoBehaviour
 {
     //static variables; static for acces in other scripts and since only one instance of each should exist
     public static double money = 1000000;
-    public const double startMoney = 1000000;   //can't be changed after init
+    public const double startMoney = 1000000;           //can't be changed after init
     public static double launderedMoney = 0;
     public static double popularity = 70;
-    public const double startPop = 70;           //can't be changed affter init
-    public static double income = 10000;
+    public const double startPop = 70;                  //can't be changed affter init
+    public static double income = 1000000;              //10000 : balanced
     public static double siphon = 0;
     public static double trust = 0.5;
     public bool passiveTrustGain = false;               //determines wether the player passively gains trust/pop
@@ -33,10 +33,10 @@ public class Economy : MonoBehaviour
     }
 
     /// <summary>
-    /// Amount (%) that a player siphons off for money laundering each second; can't be lower than 0.
+    /// Amount (%) that a player siphons off for money laundering each second;
     /// </summary>
     public void Siphon(float amount)
     {
-        if (amount > 0) siphon = amount;
+        siphon = amount;
     }
 }

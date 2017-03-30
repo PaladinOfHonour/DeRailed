@@ -435,9 +435,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91335e6a6eda4a645af2f3a29560eab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
   x: 100
   y: 300
+  text: 
+  widthMax: 300
   MyGUIStyle:
     m_Name: Money
     m_Normal:
@@ -518,6 +519,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 100
   y: 100
+  text: 
+  widthMax: 300
   MyGUIStyle:
     m_Name: Popularity
     m_Normal:
@@ -598,6 +601,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 100
   y: 500
+  text: 
+  widthMax: 300
   MyGUIStyle:
     m_Name: Laundered Money
     m_Normal:
