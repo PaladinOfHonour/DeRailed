@@ -13,7 +13,7 @@ public class TextController : MonoBehaviour
     public Text NewsContent;
     public int L = 0;
     public int R = 0;
-    
+    public Text Steelwaard;
 
     void Start()
     {
@@ -37,6 +37,7 @@ public class TextController : MonoBehaviour
 
     private void Update()
     {
+        Steelwaard.text = Economy.siphon.ToString() + "%";
 
         if (L == 0 && R == 0)
         {
