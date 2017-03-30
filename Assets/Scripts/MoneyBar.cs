@@ -40,6 +40,7 @@ public class MoneyBar : MonoBehaviour
     private void OnGUI()
     {
         //draws a Box-element which width is determined by the NS' money
+        GUI.color = Color.green;
         GUI.Box(new Rect(x, y, width, 0.1f * Screen.height), text, MyGUIStyle);
     }
 }
