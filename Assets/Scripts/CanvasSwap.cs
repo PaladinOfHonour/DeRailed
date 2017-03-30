@@ -16,6 +16,7 @@ public class CanvasSwap : MonoBehaviour
     public float growthRate = 0.5f;
     public float fadeRate = 8f;
     public static bool GameOver = false;
+    public static bool OnlyOnce = true;
     /* fade = 0  -> No fade
     fade = 1  -> Fading In
     fade = 2  -> Fading Out */
@@ -36,15 +37,22 @@ public class CanvasSwap : MonoBehaviour
             default:
                 break;
         }
-        if (Economy.money <= 0 || Economy.popularity <= 0)
+        if (Economy.money <= 0 || Economy.popularity <= 0 )
         {
-            GameOver = true;
+            if (OnlyOnce = true)
+            {
+                OnlyOnce = false;
+                GameOver = true;
+                if (GameOver == true)
+                {
+                    Debug.Log("Check");
+                    NewPage(7);
+                }
+            }
+            
+            
         }
-        if (GameOver == true)
-        {
-            Debug.Log("Check");
-            NewPage(7);
-        }
+
     }
 
     /// <summary>
@@ -53,6 +61,7 @@ public class CanvasSwap : MonoBehaviour
     /// <param name="newPage">The Index of the page to be shown</param>
     public void NewPage(int newPage)
     {
+
         Debug.Log("CHECK 2");
         Debug.Log(newPage);
         Debug.Log(pageIndex);
