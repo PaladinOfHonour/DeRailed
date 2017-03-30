@@ -8,11 +8,10 @@ public class DisplayInit : MonoBehaviour {
     /// </summary>
 	void Start ()
     {
-        Debug.Log(Display.displays.Length);
         for (int i = 0; i < Display.displays.Length; i++)
         {
             Display.displays[i].Activate();
         }
-        Debug.Log("Displays ACtive: " + Display.displays.Length);
+        Debug.Log("Displays Active: " + Display.displays.Length);   //Logs activated displays
 	}
 }

@@ -38,7 +38,6 @@ public class ButtonDisabler : MonoBehaviour
         if (TelefoonOvergaan <= 0)
         {
             //telefoon niet opgenomen.
-            sound.Stop("telephone");
             ButtonPresbaar = false;
             TelefoonOvergaan = 5;
             Debug.Log("TELAAT");
@@ -47,8 +46,8 @@ public class ButtonDisabler : MonoBehaviour
     }
     public void GeenBericht()
     {
+        if (sound.FindSource("telephone").isPlaying) sound.Stop("telephone");
         Telefoon.interactable = false;
-        Debug.Log("GeenBericht");
         TelefoonCooldown -= Time.deltaTime;
 
         if (TelefoonCooldown <= 0)
